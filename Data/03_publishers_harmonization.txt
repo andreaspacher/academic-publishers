@@ -1,0 +1,71 @@
+Deviation	Harmonization
+Bentham Science Publishers	Bentham
+Bentham Open	Bentham
+Brill Academic Publishers	Brill
+Brill Publishers	Brill
+Emerald Group Publishing	Emerald
+Hindawi Limited	Hindawi
+Inderscience Publishers	Inderscience
+Institute of Electrical and Electronics Engineers	IEEE
+Institute of Electrical and Electronics Engineers Inc. (IEEE)	IEEE
+John Wiley and Sons	Wiley
+Karger Publishers	Karger
+MDPI AG	MDPI
+Multidisciplinary Digital Publishing Institute (MDPI)	MDPI
+Oxford University Press (OUP)	Oxford University Press
+Oxford University Press	OUP
+SAGE Publications	SAGE
+SAGE Publishing	SAGE
+Scientific Research Publishing (SCIRP)	Scientific Research Publishing
+Taylor & Francis Group	Taylor & Francis
+"Taylor &amp; Francis Open Access"	Taylor & Francis
+Taylor and Francis	Taylor & Francis
+Thieme Gruppe	Thieme
+Thieme Publishing Group	Thieme
+Walter de Gruyter	De Gruyter
+Wiley-Blackwell	Wiley
+Wiley Open Access	Wiley
+World Scientific Publishing	World Scientific
+Wolters Kluwer Medknow Publications	Medknow Publications
+Wolters Kluwer Health | Lippincott	Lippincott, Williams & Wilkins
+"Lippincott, Williams &amp; Wilkins"	Lippincott, Williams & Wilkins
+Association for Computing Machinery (ACM)	ACM
+Akadémiai Kiadó	Akademiai Kiado
+American Psychological Association	APA
+Bentham Open 	Bentham
+De Gruyter Open	De Gruyter
+Frontiers Media S.A.	Frontiers Media
+Dove Medical Press Ltd.	Dove Medical Press
+IGI Global Publishing	IGI Global
+IEE	IEEE
+Informa Healthcare	Taylor & Francis
+John Benjamins Publishing Company	John Benjamins Publishing
+Mary Ann Liebert Inc.	Mary Ann Liebert
+Nature Publishing Group	Springer Nature
+Nature Research	Springer Nature
+Routledge	Taylor & Francis
+Springer Nature [academic journals on nature.com]	Springer Nature
+Wiley-Liss	Wiley
+Wiley-VCH Verlag	Wiley
+Wiley Periodicals	Wiley
+Springer Verlag	Springer
+SpringerOpen	Springer
+American Society of Civil Engineers	ASCE
+American Society of Civil Engineers (ASCE)	ASCE
+American Society of Mechanical Engineers(ASME)	ASME
+Annual Reviews Inc.	Annual Reviews
+CSIRO Publishing	CSIRO
+CSIC Consejo Superior de Investigaciones Cientificas	Consejo Superior de Investigaciones Científicas
+Copernicus	Copernicus Publications
+EDP Open	EDP Sciences
+Elsevier Masson	Elsevier
+Emerald Publishing	Emerald
+Future Medicine Ltd.	Future Medicine
+Hogrefe Publishing	Hogrefe
+Institution of Engineering and Technology (IET)	Institution of Engineering and Technology
+Intellect Publishers	Intellect
+MIT Press Journals	MIT Press
+PAGEpress Publications	PAGEpress
+PagePress	PAGEpress
+SCIENCEDOMAIN international	SCIENCEDOMAIN International
+University of Alberta Library	University of Alberta
