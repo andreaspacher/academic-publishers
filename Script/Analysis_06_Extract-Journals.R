@@ -1,14 +1,16 @@
-# FilePath <- "C:\\Users\\pac\\Downloads\\largest-publishers\\"
-FilePath <- "C:\\Users\\andre\\OneDrive\\2020 Research\\2020-07 Largest Academic Publishers\\"
+# read file with information about all publishers (ALL);
+# if a specific publisher is needed (e.g. Univ of Liverpool Press),
+# use the short name for that publisher in the 2nd column of the CSV-file,
+# and: ALL <- ALL[(ALL$PUBLISHER_FILENAME == "liverpool"), ] 
 
-ALL <- read.csv(paste0(FilePath, "extract_all_publishers.csv"), header = T, sep = ";") # , fileEncoding="latin1"
-ALL <- ALL[(ALL$PUBLISHER_FILENAME == "pitt"
-| ALL$PUBLISHER_FILENAME == "liverpool"
-| ALL$PUBLISHER_FILENAME == "ecronicon"), ]
+ALL <- read.csv("..\\Data\\04_publishers.csv", header = T, sep = ";")
 
 alljournals <- list()
 warninglist <- list()
 errorlist <- list()
+
+# source the function getjournals()
+source("Function\\function_getjournals.R")
 
 for (i in 1:nrow(ALL)) {
   alljournals[[i]] <- tryCatch(
