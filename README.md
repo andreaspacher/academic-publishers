@@ -2,7 +2,9 @@
 
 ## Purpose
 
-A list of academic publishers and their scholarly journals — the main result is contained in the `Output`-folder.
+A list of academic publishers and their scholarly journals.
+
+The main result is contained in the `Output`-folder in the form of two CSV-documents (the final `allpublishers`-csv-file and the `alljournals`-csv-list).
 
 ## Data Sources
 
