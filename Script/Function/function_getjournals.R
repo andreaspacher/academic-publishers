@@ -77,7 +77,7 @@ getjournals <- function(ALL) {
 
     for (i in 1:total_pages) {
       if (ALL$PUBLISHER_PAGE_I == "i") {
-        webpage_url <- paste0(ALL$PUBLISHER_PAGE_URL_BEFORE, ALL$PUBLISHER_PAGE_I, ALL$PUBLISHER_PAGE_URL_AFTER)
+        webpage_url <- paste0(ALL$PUBLISHER_PAGE_URL_BEFORE, i, ALL$PUBLISHER_PAGE_URL_AFTER)
       } else if (ALL$PUBLISHER_PAGE_I == "i-1") {
         webpage_url <- paste0(ALL$PUBLISHER_PAGE_URL_BEFORE, i - 1, ALL$PUBLISHER_PAGE_URL_AFTER)
       }

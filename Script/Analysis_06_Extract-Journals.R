@@ -3,14 +3,15 @@
 # use the short name for that publisher in the 2nd column of the CSV-file,
 # and: ALL <- ALL[(ALL$PUBLISHER_FILENAME == "liverpool"), ] 
 
-ALL <- read.csv("..\\Data\\04_publishers.csv", header = T, sep = ";")
+ALL <- read.csv(".\\Data\\04_publishers.csv", header = T, sep = ";")
 
 alljournals <- list()
-warninglist <- list()
-errorlist <- list()
+
+# if you want to choose only a specific publisher, use this:
+# ALL <- ALL[(ALL$PUBLISHER_NAME) == "SAGE", ]
 
 # source the function getjournals()
-source("Function\\function_getjournals.R")
+source(".\\Script\\Function\\function_getjournals.R")
 
 for (i in 1:nrow(ALL)) {
   alljournals[[i]] <- tryCatch(
@@ -19,11 +20,9 @@ for (i in 1:nrow(ALL)) {
       getjournals(ALL[i, ])
     },
     warning = function(warning_condition) {
-      warninglist[[i]] <- ALL[i, 2]
       cat("warning with regards to ", ALL[i, 1], "\n")
     },
     error = function(error_condition) {
-      errorlist[[i]] <- ALL[i, 2]
       cat("error with regards to ", ALL[i, 1], "\n")
     }
   )
@@ -35,10 +34,7 @@ DF <- unique(DF)
 
 currentDate <- Sys.Date()
 write.csv(DF,
-  file = paste0(
-    FilePath,
-    paste0("alljournals-", currentDate, ".csv")
-  ),
+  file = paste0("Output//alljournals-", currentDate, ".csv"),
   row.names = F
 )
 
