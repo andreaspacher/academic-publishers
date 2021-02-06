@@ -6,6 +6,8 @@ A list of academic publishers and their scholarly journals.
 
 The main result is contained in the `Output`-folder in the form of two CSV-documents (the final `allpublishers`-csv-file and the `alljournals`-csv-list).
 
+The results are also visible at https://ooir.org/journals/.
+
 ## Data Sources
 
 ### Publishers
