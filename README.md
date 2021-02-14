@@ -12,6 +12,8 @@ This project's purpose is to generate a list of major academic publishers and th
 
 As for the results, see the the `Output`-folder, or browse through the final list at https://ooir.org/journals/.
 
+In total, this project found 25.816 journals belonging to 137 publishers.
+
 ## Data Sources
 
 ### Publishers
