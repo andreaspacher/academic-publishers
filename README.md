@@ -4,9 +4,9 @@
 
 To generate a list of academic publishers and their scholarly journals through webscraping.
 
-The main result is contained in the `Output`-folder in the form of two CSV-documents (the final `allpublishers`-csv-file and the `alljournals`-csv-list).
+As for the results, see the the `Output`-folder, or browse through the final list at https://ooir.org/journals/.
 
-One can also browse through the results at https://ooir.org/journals/.
+This ReadMe contains some cursory remarks; for deeper details, see the preprint at https://doi.org/10.31235/osf.io/56b28. 
 
 ## Data Sources
 
