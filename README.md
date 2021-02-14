@@ -4,6 +4,8 @@
 
 This readme-file contains some cursory remarks. For greater details, [see the pre-print at socarXiv](https://doi.org/10.31235/osf.io/56b28).
 
+<img src="https://ooir.org/journals/paper.jpg" width="180" height="210">
+
 ## Purpose
 
 This project's purpose is to generate a list of major academic publishers and their scholarly journals through webscraping.
