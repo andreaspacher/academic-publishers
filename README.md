@@ -1,12 +1,14 @@
 # academic-publishers
 
+## Pre-Print
+
+This readme-file contains some cursory remarks. For greater details, [see the pre-print at socarXiv](https://doi.org/10.31235/osf.io/56b28).
+
 ## Purpose
 
 This project's purpose is to generate a list of major academic publishers and their scholarly journals through webscraping.
 
 As for the results, see the the `Output`-folder, or browse through the final list at https://ooir.org/journals/.
-
-This ReadMe contains some cursory remarks; for deeper details, see the preprint at https://doi.org/10.31235/osf.io/56b28. 
 
 ## Data Sources
 
