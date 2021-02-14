@@ -2,7 +2,7 @@
 
 ## Purpose
 
-To generate a list of academic publishers and their scholarly journals through webscraping.
+This project's purpose is to generate a list of major academic publishers and their scholarly journals through webscraping.
 
 As for the results, see the the `Output`-folder, or browse through the final list at https://ooir.org/journals/.
 
