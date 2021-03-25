@@ -1,8 +1,8 @@
 #
 # EDIT THESE DATA
 #
-fileread <- "C:\\Your\\File\\Path\\data--scopus.xlsx"
-fileToSave <- "C:\\Your\\File\\Path\\all-journals-scopus.csv"
+fileread <- "./Data/02_Scopus.xlsx"
+fileToSave <- "./Output/all-journals-scopus.csv"
 
 #
 # EXECUTABLE CODE STARTS HERE
