@@ -1,26 +1,24 @@
-#
-# EDIT THIS
-#
-fileToSave <- "C:\\Your\\File\\Path\\all-journals-publons.csv"
-
-#
-# EXECUTABLE CODE STARTS HERE
-#
 library(rvest)
 library(purrr)
 
+# basic url for webscraping
 url_base <- "https://publons.com/publisher/?page="
 
+# prepare dataframe in which data will be stored during the webscraping process
 publons <- data.frame("publisher" = character(), "journals" = integer(), "reviews" = integer())
 
-# 43 pages at Publons, covering publishers that have at least 1.000 reviews there (as of Dec. 2020)
+# scrape 43 pages at Publons,
+# so as to cover publishers that have at least 1.000 reviews there
+# (as of Dec. 2020)
 for (i in 1:43) {
 
-  # simple but effective progress indicator
+  # progress indicator
   cat(".")
 
+  # scrape each of the 43 pages
   pg <- xml2::read_html(paste0(url_base, i))
 
+  # fetch data from Publons website
   publisher <- html_text(html_nodes(pg, "h3"))
   journaldata <- html_node(pg, "#body > div > div.content > div")
   journals <- stringr::str_extract_all(journaldata, "(?<=<span>).*?(?= Journal)")
@@ -40,4 +38,4 @@ df <- publons[order(publons$journals, decreasing = TRUE), ]
 df <- df[!duplicated(df$publisher), ]
 df$reviews <- substring(df$reviews, 7)
 
-write.csv(df, fileToSave, row.names = FALSE)
+write.csv(df, "Output\\02_publishers_Publons.csv", row.names = FALSE)
