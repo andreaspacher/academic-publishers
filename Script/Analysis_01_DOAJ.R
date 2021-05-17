@@ -2,7 +2,7 @@
 # EDIT THESE DATA
 #
 
-json_file <- "C:\\Your\\File\\Path\\data--doaj.json"
+json_file <- "Data\\01_DOAJ.json"
 fileToSave <- "C:\\Your\\File\\Path\\all-journals-doaj.csv"
 
 #
