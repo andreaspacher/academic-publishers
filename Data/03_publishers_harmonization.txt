@@ -69,3 +69,50 @@ PAGEpress Publications	PAGEpress
 PagePress	PAGEpress
 SCIENCEDOMAIN international	SCIENCEDOMAIN International
 University of Alberta Library	University of Alberta
+Informa UK (Taylor & Francis)	Taylor & Francis
+Springer-Verlag	Springer
+Wiley (John Wiley & Sons)	Wiley
+Wiley (Blackwell Publishing)	Wiley
+EDORIUM Journals, Pvt., Ltd.	Edorium Journals
+Walter de Gruyter GmbH	De Gruyter
+Springer (Biomed Central Ltd.)	BioMedCentral
+Wolters Kluwer Health	Wolters Kluwer
+Georg Thieme Verlag KG	Thieme
+Emerald (MCB UP)	Emerald
+OMICS Publishing Group	OMICS
+Bentham Science	Bentham
+De Gruyter Open Sp. z o.o.	De Gruyter
+Inderscience Enterprises Ltd.	Inderscience
+Ovid Technologies (Wolters Kluwer)  - Lippincott Williams & Wilkins	Lippincott, Williams & Wilkins
+Al Manhal FZ, LLC	Al Manhal
+PERSEE Program	Persée
+Springer Science and Business Media LLC	Springer
+Scientific Research Publishing, Inc.	SCIRP
+Academy and Industry Research Collaboration Center	AIRCC Publishing Corporation
+Akademiai Kiado Zrt.	Akademiai Kiado
+Association for Computing Machinery	ACM
+Begell House Inc.	Begell House
+ASME International	ASME
+Berkeley Electronic Press	bepress
+Berghahn Books	Berghahn
+Berghahn Journals	Berghahn
+Canadian Center of Science and Education (CCSE)	Canadian Center of Science and Education
+Copernicus Publications	Copernicus
+Copernicus GmbH	Copernicus
+David Publishing Company	David Publishing
+Scientific Research Publishing	SCIRP
+S. Karger AG	Karger
+Institution of Electrical Engineers	Institution of Engineering and Technology
+The University of Chicago Press	University of Chicago Press
+Index Copernicus International	Copernicus
+Hindawi (International Scholarly Research Network)	Hindawi
+Frontiers Media SA	Frontiers
+Scitechnol Biosoft Pvt. Ltd (OMICS)	OMICS
+Frontiers Media	Frontiers
+The Royal Society of Chemistry	Royal Society of Chemistry
+Egypts Presidential Specialized Council for Education and Scientific Research	Egyptian Knowledge Bank
+Termedia Sp. z.o.o.	Termedia
+Macrothink Institute, Inc.	Macrothink
+Organisation for Economic Co-Operation and Development	OECD
+Hogrefe Publishing Group	Hogrefe
+Ubiquity Press, Ltd.	Ubiquity Press
