@@ -1,14 +1,4 @@
-#
-# EDIT THESE DATA
-#
-
-json_file <- "Data\\01_DOAJ.json"
-fileToSave <- "C:\\Your\\File\\Path\\all-journals-doaj.csv"
-
-#
-# EXECUTABLE CODE STARTS HERE
-#
-json_data <- rjson::fromJSON(file = json_file)
+json_data <- rjson::fromJSON(file = "Data\\01_DOAJ.json")
 
 doaj_publishers <- list()
 
@@ -19,4 +9,4 @@ doaj_publishers <- unlist(doaj_publishers)
 df <- data.frame(table(doaj_publishers))
 df <- df[rev(order(df$Freq)), ]
 
-write.csv(df, fileToSave, row.names = FALSE)
+write.csv(df, "Output\\01_publishers_DOAJ.csv", row.names = FALSE)
