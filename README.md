@@ -14,6 +14,14 @@ As for the results, see the the `Output`-folder, or browse through the final lis
 
 In total, this project found 25.816 journals belonging to 137 publishers.
 
+## Key Documents
+
+There are three key documents for adding/scraping publishers:
+
+* `Data\04_publishers.csv`: the (adaptable) list of publishers to be scraped, including the URL and the relevant CSS selectors;
+* `Script\Function\function_getjournals.R`: the scraping function (change the browser there in case you use `RSelenium`);
+* `Script\Analysis_06_Extract-Journals.R`: activate the scraping function
+
 ## Data Sources
 
 ### Publishers
