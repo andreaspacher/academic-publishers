@@ -22,16 +22,22 @@ iop_journal_names <- list()
 
 # find journal names based on CrossRef API
 for (i in 1:length(iop_issn)) {
-  crossref <- paste0("https://api.crossref.org/journals/", iop_issn[i], "&mailto=", email)
-  json_data <- rjson::fromJSON(file = crossref)
 
+  crossref <- paste0("https://api.crossref.org/journals/", iop_issn[i], "&mailto=", email)
+  res <- httr::GET(crossref)
 
   printtext <- paste(i, crossref, sep = ": ")
   print(printtext)
+    
+  if(res$status_code == 200) {
+    json_data <- jsonlite::fromJSON(rawToChar(res$content), flatten = TRUE)
+    iop_journal_names[[i]] <- json_data$message$title
+    rm(json_data)
+  } else {
+    print("Error")
+  }
 
-  iop_journal_names[[i]] <- json_data$message$title
-
-  Sys.sleep(4)
+  Sys.sleep(0.5)
 }
 
 iop_journal_names[sapply(iop_journal_names, is.null)] <- NA
@@ -41,4 +47,8 @@ iop_full <- do.call(rbind, Map(data.frame, journal = iop_journal_names, url = io
 iop_full$publisher = "IOP"
 iop_full$date = Sys.Date()
 
-write.csv(iop_full, file = "Output\\journals_iop.csv", row.names = F)
+currentDate <- Sys.Date()
+write.csv(iop_full,
+          file = paste0("Output/journals-IOP-", currentDate, ".csv"),
+          row.names = F
+)
