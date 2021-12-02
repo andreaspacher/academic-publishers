@@ -3,13 +3,13 @@
 # use the short name for that publisher in the 2nd column of the CSV-file,
 # and: ALL <- ALL[(ALL$PUBLISHER_FILENAME == "liverpool"), ] 
 
-ALL <- read.csv("./Data/04_publishers.csv", header = T, sep = ";", stringsAsFactors=FALSE)
+ALL <- read.csv("./Data/04_publishers.csv", header = T, 
+                stringsAsFactors=FALSE)
 
 alljournals <- list()
 
 # if you want to choose only a specific publisher, use this:
 # ALL <- ALL[(ALL$PUBLISHER_NAME) == "SAGE", ]
-
 # source the function getjournals()
 source("./Script/Function/function_getjournals.R")
 
