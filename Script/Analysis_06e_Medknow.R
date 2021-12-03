@@ -5,7 +5,7 @@ medknow_journal_url <- list()
 
 medknow_url <- "https://www.medknow.com/journals.asp?tag=0"
 
-medknow_page <- rvest::html_session(
+medknow_page <- rvest::session(
   medknow_url,
   httr::user_agent("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.20 (KHTML, like Gecko) Chrome/11.0.672.2 Safari/534.20")
 )
@@ -23,7 +23,7 @@ for (i in 1:medknow_page_number) {
   printtext <- paste(i, medknow_url, sep = ": ")
   print(printtext)
 
-  medknow_page <- rvest::html_session(
+  medknow_page <- rvest::session(
     medknow_url,
     httr::user_agent("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.20 (KHTML, like Gecko) Chrome/11.0.672.2 Safari/534.20")
   )
@@ -62,4 +62,8 @@ medknow_full$date = Sys.Date()
 
 medknow_full <- unique(medknow_full)
 
-write.csv(medknow_full, file = ".\\Output\\journals_medknow.csv", row.names = F)
+currentDate <- Sys.Date()
+write.csv(medknow_full,
+          file = paste0("Output/journals-medknow-", currentDate, ".csv"),
+          row.names = F
+)

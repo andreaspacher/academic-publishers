@@ -1,4 +1,5 @@
-ALL <- read.csv(".\\Data\\04_publishers.csv", header = T, sep = ";")
+ALL <- read.csv("./Data/04_publishers.csv", header = T, 
+                stringsAsFactors=FALSE)
 
 alljournals <- list()
 

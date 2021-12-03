@@ -6,7 +6,7 @@ wiley_journal_url <- list()
 
 url <- paste0("https://onlinelibrary.wiley.com/action/showPublications?PubType=journal&pageSize=50")
 
-firstpage <- rvest::html_session(
+firstpage <- rvest::session(
   url,
   httr::user_agent("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.20 (KHTML, like Gecko) Chrome/11.0.672.2 Safari/534.20")
 )
@@ -25,7 +25,7 @@ for (i in 1:totalpages) {
   printtext <- paste(i, wiley_url, sep = ": ")
   print(printtext)
 
-  wiley_page <- rvest::html_session(
+  wiley_page <- rvest::session(
     wiley_url,
     httr::user_agent("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.20 (KHTML, like Gecko) Chrome/11.0.672.2 Safari/534.20")
   )
@@ -61,4 +61,8 @@ wiley_full$date <- Sys.Date()
 
 wiley_full <- unique(wiley_full)
 
-write.csv(wiley_full, file = ".\\Output\\journals_wiley.csv", row.names = F)
+currentDate <- Sys.Date()
+write.csv(wiley_full,
+          file = paste0("Output/journals-wiley-", currentDate, ".csv"),
+          row.names = F
+)
