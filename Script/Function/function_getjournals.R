@@ -16,8 +16,8 @@ getjournals <- function(ALL) {
 
       remDr$navigate(ALL$PUBLISHER_URL)
 
-      for (i in 1:4) {
-        remDr$executeScript(paste("scroll(0,", i * 10000, ");"))
+      for (iiii in 1:10) {
+        remDr$executeScript(paste("scroll(0,", iiii * 10000, ");"))
         Sys.sleep(3)
       }
 
@@ -30,7 +30,7 @@ getjournals <- function(ALL) {
       system("taskkill /im java.exe /f", intern = FALSE, ignore.stdout = FALSE)
     } else {
       if (grepl("SESSION_REQUIRED", ALL$OTHER)) {
-        webpage <- rvest::html_session(
+        webpage <- rvest::session(
           ALL$PUBLISHER_URL,
           httr::user_agent("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.20 (KHTML, like Gecko) Chrome/11.0.672.2 Safari/534.20")
         )
@@ -46,7 +46,7 @@ getjournals <- function(ALL) {
     if (ALL$JOURNALNAMES_ADDCODE_YESNO == "1") {
       eval(parse(text = ALL$JOURNALNAMES_ADDITIONAL_CODE))
     }
-    if (ALL$OTHER != "OMIT_ALL_UNIQUE") journalnames <- unique(journalnames)
+    if (is.na(ALL$OTHER) | ALL$OTHER != "OMIT_ALL_UNIQUE") journalnames <- unique(journalnames)
     journalnames <- trimws(journalnames)
 
     journalurl <- rvest::html_nodes(webpage, ALL$JOURNAL_URL_NODES)
@@ -54,7 +54,7 @@ getjournals <- function(ALL) {
     if (ALL$JOURNALURL_ADDCODE_YESNO == "1") {
       eval(parse(text = ALL$JOURNALURL_ADDITIONAL_CODE))
     }
-    if (ALL$OTHER != "OMIT_URL_UNIQUE" & ALL$OTHER != "OMIT_ALL_UNIQUE") journalurl <- unique(journalurl)
+    if (is.na(ALL$OTHER) | (ALL$OTHER != "OMIT_URL_UNIQUE" & ALL$OTHER != "OMIT_ALL_UNIQUE")) journalurl <- unique(journalurl)
     journalurl <- trimws(journalurl)
     journalurl <- paste0(ALL$JOURNALURL_PASTE, journalurl)
   } else if (ALL$PUBLISHER_PAGES == "MULTIPLE") {
@@ -76,10 +76,18 @@ getjournals <- function(ALL) {
     journalurl <- list()
 
     for (i in 1:total_pages) {
-      if (ALL$PUBLISHER_PAGE_I == "i") {
-        webpage_url <- paste0(ALL$PUBLISHER_PAGE_URL_BEFORE, i, ALL$PUBLISHER_PAGE_URL_AFTER)
+      if (ALL$PUBLISHER_PAGE_I== "i") {
+        if(!is.na(ALL$PUBLISHER_PAGE_URL_AFTER)) {
+          webpage_url <- paste0(ALL$PUBLISHER_PAGE_URL_BEFORE, i, ALL$PUBLISHER_PAGE_URL_AFTER[3])
+        } else {
+          webpage_url <- paste0(ALL$PUBLISHER_PAGE_URL_BEFORE, i)
+        }
       } else if (ALL$PUBLISHER_PAGE_I == "i-1") {
-        webpage_url <- paste0(ALL$PUBLISHER_PAGE_URL_BEFORE, i - 1, ALL$PUBLISHER_PAGE_URL_AFTER)
+        if(!is.na(ALL$PUBLISHER_PAGE_URL_AFTER)) {
+          webpage_url <- paste0(ALL$PUBLISHER_PAGE_URL_BEFORE, i - 1, ALL$PUBLISHER_PAGE_URL_AFTER[3])
+        } else {
+          webpage_url <- paste0(ALL$PUBLISHER_PAGE_URL_BEFORE, i - 1)
+        }
       }
 
       printtext <- paste(i, webpage_url, sep = ": ")
@@ -102,8 +110,8 @@ getjournals <- function(ALL) {
 
         remDr$navigate(webpage_url)
 
-        for (i in 1:4) {
-          remDr$executeScript(paste("scroll(0,", i * 10000, ");"))
+        for (iiii in 1:4) {
+          remDr$executeScript(paste("scroll(0,", iiii * 10000, ");"))
           Sys.sleep(3)
         }
 
@@ -115,13 +123,17 @@ getjournals <- function(ALL) {
         rD$server$stop()
         system("taskkill /im java.exe /f", intern = FALSE, ignore.stdout = FALSE)
       } else {
-        if (ALL$OTHER == "SESSION_REQUIRED") {
-          webpage <- rvest::html_session(
-            webpage_url,
-            httr::user_agent("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.20 (KHTML, like Gecko) Chrome/11.0.672.2 Safari/534.20")
-          )
-        } else if (ALL$OTHER == "RUSSIAN_ENCODING") {
-          webpage <- xml2::read_html(url(webpage_url), encoding = "windows-1251")
+        if(!is.na(ALL$OTHER)) {
+          if (ALL$OTHER == "SESSION_REQUIRED") {
+            webpage <- rvest::session(
+              webpage_url,
+              httr::user_agent("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.20 (KHTML, like Gecko) Chrome/11.0.672.2 Safari/534.20")
+            )
+          } else if (ALL$OTHER == "RUSSIAN_ENCODING") {
+            webpage <- xml2::read_html(url(webpage_url), encoding = "windows-1251")
+          } else {
+            webpage <- xml2::read_html(webpage_url)
+          }
         }
         else {
           webpage <- xml2::read_html(webpage_url)

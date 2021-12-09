@@ -9,7 +9,7 @@ for (i in 1:26) {
 
   tf_url <- paste0("https://www.tandfonline.com/action/showPublications?pubType=journal&sortBy=&pageSize=20&subjectTitle=&startPage=&alphabetRange=", letters[i])
 
-  tf_page <- rvest::html_session(
+  tf_page <- rvest::session(
     tf_url,
     httr::user_agent("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.20 (KHTML, like Gecko) Chrome/11.0.672.2 Safari/534.20")
   )
@@ -53,7 +53,7 @@ for (i in 1:26) {
     URLS <- paste0("https://www.tandfonline.com", URLS)
     tf_journal_url[[i]][[ii]] <- URLS
 
-    Sys.sleep(5.5)
+    Sys.sleep(8)
   }
 }
 
@@ -67,4 +67,4 @@ tf_full$date = Sys.Date()
 
 tf_full <- unique(tf_full)
 
-write.csv(tf_full, file = ".\\Output\\journals_taylor-and-francis.csv", row.names = F)
+write.csv(tf_full, file = paste0(".\\Output\\journals_taylor-and-francis", Sys.Date(), ".csv"), row.names = F)

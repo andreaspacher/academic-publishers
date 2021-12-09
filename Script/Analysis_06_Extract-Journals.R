@@ -3,8 +3,8 @@
 # use the short name for that publisher in the 2nd column of the CSV-file,
 # and: ALL <- ALL[(ALL$PUBLISHER_FILENAME == "liverpool"), ] 
 
-ALL <- read.csv("./Data/04_publishers.csv", header = T, 
-                stringsAsFactors=FALSE)
+ALL <- readr::read_csv2("./Data/04_publishers.csv", col_names = T)
+ALL <- read_tsv("./Data/04_publishers.tsv")
 
 alljournals <- list()
 
@@ -21,9 +21,14 @@ for (i in 1:nrow(ALL)) {
     },
     warning = function(warning_condition) {
       cat("warning with regards to ", ALL[i, 1], "\n")
+      message(warning_condition)
+      cat("\n")
+      getjournals(ALL[i, ])
     },
     error = function(error_condition) {
       cat("error with regards to ", ALL[i, 1], "\n")
+      message(error_condition)
+      cat("\n")
     }
   )
 }

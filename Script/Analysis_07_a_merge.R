@@ -1,0 +1,5 @@
+temp <- list.files(path = "./Output/", pattern=".*2021-12.*csv")
+DF <- lapply(paste0("./Output/", temp), read_csv)
+DF <- data.table::rbindlist(DF)
+DF <- distinct(DF)
+write_csv(DF, paste0("Output\\allpublishers-PRELIMINARY-", Sys.Date(), ".csv"))

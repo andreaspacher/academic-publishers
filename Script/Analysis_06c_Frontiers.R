@@ -5,11 +5,11 @@ eCaps <- list(chromeOptions = list(
   args = list('--user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"')
 ))
 
-rD <- RSelenium::rsDriver(browser="chrome", port=4546L, verbose=F, chromever="87.0.4280.20",
-                          extraCapabilities = eCaps)
+#rD <- RSelenium::rsDriver(browser="chrome", port=4546L, verbose=F, chromever="87.0.4280.20",
+#                          extraCapabilities = eCaps)
 
 #AT WORK
-#rD <- RSelenium::rsDriver(browser="chrome", port=4546L, verbose=F)
+rD <- RSelenium::rsDriver(browser="firefox", port=4546L, verbose=F)
 remDr <- rD[["client"]]
 remDr$navigate("https://www.frontiersin.org/journals?domain=all")
 
@@ -46,5 +46,13 @@ frontiers_full <- do.call(rbind, Map(data.frame, journal=frontiers_j_all, url=fr
 frontiers_full$publisher <- "Frontiers"
 frontiers_full$date <- Sys.Date()
 
+# special case
+frontiers_full$journal[frontiers_full$journal == "Dystonia Dystonia"] <- "Dystonia"
 
-write.csv(frontiers_full, file=".//Output//journals_frontiers.csv", row.names = F)
+write.csv(frontiers_full, file = paste0(".//Output//journals_frontiers-", Sys.Date(), ".csv"), row.names = F)
+
+
+remDr$close()
+gc()
+rD$server$stop()
+system("taskkill /im java.exe /f", intern = FALSE, ignore.stdout = FALSE)
