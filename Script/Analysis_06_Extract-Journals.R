@@ -4,7 +4,7 @@
 # and: ALL <- ALL[(ALL$PUBLISHER_FILENAME == "liverpool"), ] 
 
 ALL <- readr::read_csv2("./Data/04_publishers.csv", col_names = T)
-ALL <- read_tsv("./Data/04_publishers.tsv")
+ALL <- readr::read_tsv("./Data/04_publishers.tsv")
 
 alljournals <- list()
 
@@ -16,11 +16,11 @@ source("./Script/Function/function_getjournals.R")
 for (i in 1:nrow(ALL)) {
   alljournals[[i]] <- tryCatch(
     {
-      cat(i, ": Now trying out", ALL[i, 1], "\n")
+      cat(paste0(i, ": Now trying out ", ALL[i, 1], "\n"))
       getjournals(ALL[i, ])
     },
     warning = function(warning_condition) {
-      cat("warning with regards to ", ALL[i, 1], "\n")
+      cat(paste0("warning with regards to ", ALL[i, 1], "\n"))
       message(warning_condition)
       cat("\n")
       getjournals(ALL[i, ])
