@@ -3,7 +3,7 @@
 # use the short name for that publisher in the 2nd column of the CSV-file,
 # and: ALL <- ALL[(ALL$PUBLISHER_FILENAME == "liverpool"), ] 
 
-ALL <- readr::read_csv2("./Data/04_publishers.csv", col_names = T)
+ALL <- readr::read_csv("./Data/04_publishers.csv", col_names = T)
 ALL <- readr::read_tsv("./Data/04_publishers.tsv")
 
 alljournals <- list()
