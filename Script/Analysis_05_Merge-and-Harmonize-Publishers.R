@@ -33,7 +33,7 @@ alljournals <- list(
 
 # How many journals should a publisher have in order to be listed?
 # This example shows a threshold of 30 journals per publisher
-threshold <- 50
+threshold <- 30
 
 alljournals <- lapply(alljournals, function(x) subset(x, Journals >= threshold))
 

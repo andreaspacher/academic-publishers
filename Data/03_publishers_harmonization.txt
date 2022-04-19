@@ -116,3 +116,7 @@ Macrothink Institute, Inc.	Macrothink
 Organisation for Economic Co-Operation and Development	OECD
 Hogrefe Publishing Group	Hogrefe
 Ubiquity Press, Ltd.	Ubiquity Press
+OUP	Oxford University Press
+Inderscience	InderScience
+Medknow Publications	Medknow
+BMC	BioMedCentral
