@@ -10,9 +10,9 @@ This readme-file contains some cursory remarks. For greater details, [see the pr
 
 This project's purpose is to generate a list of major academic publishers and their scholarly journals through webscraping.
 
-As for the results, see the the `Output`-folder, or browse through the final list at https://ooir.org/journals/.
+As for the results, see the the `Output`-folder, or browse through the final list at https://ooir.org/journals/ (that website is based on 2021 data, but the `Output`-folder contains updated data from 2022).
 
-In total, this project found 25.816 journals belonging to 137 publishers.
+In total, this project found 26.575 journals belonging to 138 publishers.
 
 ## Key Documents
 
@@ -55,8 +55,9 @@ The various css selectors for each publisher is saved in `Data\04_publishers.csv
 
 ### Publishers
 
-The full list of the publishers and their journal counts is visible in `Output\allpublishers-FINAL-2021-02-05.csv`, or at https://ooir.org/journals/.
+The full list of the publishers and their journal counts is visible in `Output\allpublishers-2022-04-15.xlsx`.
+
 
 ### Journals
 
-The journal list is visible in `Output\alljournals-2021-02-05.csv`, or at https://ooir.org/journals/.
+The journal list is visible in `Output\alljournals-2022-03-02.csv`, or at https://ooir.org/journals/ (the list is based on 2022 data, while the website is from 2021).
