@@ -15,4 +15,4 @@ df <- data.frame("Publishers" = publishers, "Journals" = journalnumber)
 df$Journals <- as.numeric(df$Journals)
 df <- df[rev(order(df$Journals)), ]
 
-write.csv(df, "Output\\04_publishers_SherpaRomeo.csv", row.names = FALSE)
+write.csv(df, "Output\\Preliminary_Lists\\04_publishers_SherpaRomeo.csv", row.names = FALSE)

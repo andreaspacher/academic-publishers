@@ -1,12 +1,12 @@
-json_data <- rjson::fromJSON(file = "Data\\01_DOAJ.json")
+# the source of the csv-file
+# is https://doaj.org/docs/public-data-dump/
+doaj <- readr::read_csv("Data\\01_DOAJ.csv")
+doaj <- janitor::clean_names(doaj)
 
-doaj_publishers <- list()
+# extract publishers
+df <- data.frame(table(doaj$publisher))
 
-for (i in 1:length(json_data)) {
-  doaj_publishers[i] <- as.matrix(json_data[[i]]$bibjson$publisher$name)
-}
-doaj_publishers <- unlist(doaj_publishers)
-df <- data.frame(table(doaj_publishers))
+# count frequency of publishers
 df <- df[rev(order(df$Freq)), ]
 
-write.csv(df, "Output\\01_publishers_DOAJ.csv", row.names = FALSE)
+write.csv(df, "Output\\Preliminary_Lists\\01_publishers_DOAJ.csv", row.names = FALSE)

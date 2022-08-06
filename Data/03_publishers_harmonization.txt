@@ -1,27 +1,89 @@
 Deviation	Harmonization
+Academic Journals Inc.	Academic Journals
+Akad?miai Kiad?	Akademiai Kiado
+Allerton Press Inc.	Allerton Press
+American Institute of Physics (AIP)	American Institute of Physics
+Asian Network for Scientific Information (ANSINET)	ANSINET
+Asian Network for Scientific Information	ANSINET
+American Society of Mechanical Engineers	ASME
+BioMed Central	BioMedCentral
+Birkh?user Verlag	Springer
 Bentham Science Publishers	Bentham
 Bentham Open	Bentham
 Brill Academic Publishers	Brill
 Brill Publishers	Brill
+CHINA SCIENCE PUBLISHING & MEDIA (CSPM) LTD	China Science Publishing & Media
+Columbia University Libraries	Columbia University
+Consejo Superior de Investigaciones Cient?ficas	Consejo Superior de Investigaciones Cient√≠ficas
+Dove Press	Dovepress
+Dove Medical Press	Dovepress
+Fabrizio Serra editore	Fabrizio Serra
+University of Alberta	University of Alberta Press
 Emerald Group Publishing	Emerald
+Equinox Publishing Ltd	Equinox Publishing
+Ferdowsi University of Mashhad Press (FUM Press)	Ferdowsi University of Mashhad
 Hindawi Limited	Hindawi
+Human Kinetics Publishers Inc.	Human Kinetics
+Human Kinetics Publishers	Human Kinetics
+ICE Publishing Ltd.	ICE Publishing
 Inderscience Publishers	Inderscience
 Institute of Electrical and Electronics Engineers	IEEE
 Institute of Electrical and Electronics Engineers Inc. (IEEE)	IEEE
+IEEE Communications Society	IEEE
+IEEE Computer Society	IEEE
+Computer Society    IEEE
+Imprensa da Universidade de Coimbra	Coimbra University Press
+Intellect Ltd.	Intellect
+GERFLINT	Gerflint
+IGI Global	IGI Global Publishing
+Pleiades Publishing	Pleiades
+EDP Sciences	EDPSciences
+ECronicon	E-Cronicon
 John Wiley and Sons	Wiley
 Karger Publishers	Karger
+KeAi Communications Co., Ltd.	KeAi
+KeAi Communications Co. Ltd.	KeAi
+Lippincott, Williams & Wilkins	Wolters Kluwer
+Lippincott, Williams & Wilkins	Wolters Kluwer
+MA Healthcare Ltd	MA Healthcare
+Mosby Inc.	Mosby
+Mosby	Elsevier
+Nature Portfolio	Springer Nature
 MDPI AG	MDPI
 Multidisciplinary Digital Publishing Institute (MDPI)	MDPI
+Now Publishers Inc	Now Publishers
 Oxford University Press (OUP)	Oxford University Press
 Oxford University Press	OUP
+PAGEpress	PAGEPress
+PAGEPress Publications	PAGEPress
+Peertechz Publications Private Limited	Peertechz Publications
+Polska Akademia Nauk	Polish Academy of Sciences
+SciELO Peru	SciELO
+Sciendo	De Gruyter
+Societa Editrice il Mulino	Il Mulino
+Societa Editrice Il Mulino	Il Mulino
 SAGE Publications	SAGE
 SAGE Publishing	SAGE
+Springer Publishing Company	Springer
+Taylor & Francis Open Access	Taylor & Francis
 Scientific Research Publishing (SCIRP)	Scientific Research Publishing
 Taylor & Francis Group	Taylor & Francis
-"Taylor &amp; Francis Open Access"	Taylor & Francis
+Taylor & Francis Open Access	Taylor & Francis
 Taylor and Francis	Taylor & Francis
 Thieme Gruppe	Thieme
 Thieme Publishing Group	Thieme
+Thieme Open	Thieme
+Termedia Publishing House	Termedia
+Termedia Publishing	Termedia
+Termedia Publishing Ltd.	Termedia
+Termedia Publishing House Ltd.	Termedia
+Universidad Nacional Aut?noma de M?xico	Universidad Nacional Autonoma de Mexico
+Universidad Nacional, Costa Rica	Universidad Nacional de Costa Rica
+Universidad Polit?cnica de Valencia	Universidad Politecnica de Valencia
+Universidade de S?o Paulo	Universidade de Sao Paulo
+University of Alberta Libraries	University of Alberta
+Urban und Fischer Verlag Jena	Urban and Fischer
+Wolters Kluwer Deutschland	Wolters Kluwer
 Walter de Gruyter	De Gruyter
 Wiley-Blackwell	Wiley
 Wiley Open Access	Wiley
@@ -30,7 +92,7 @@ Wolters Kluwer Medknow Publications	Medknow Publications
 Wolters Kluwer Health | Lippincott	Lippincott, Williams & Wilkins
 "Lippincott, Williams &amp; Wilkins"	Lippincott, Williams & Wilkins
 Association for Computing Machinery (ACM)	ACM
-AkadÈmiai KiadÛ	Akademiai Kiado
+Akad√©miai Kiad√≥	Akademiai Kiado
 American Psychological Association	APA
 Bentham Open 	Bentham
 De Gruyter Open	De Gruyter
@@ -55,7 +117,7 @@ American Society of Civil Engineers (ASCE)	ASCE
 American Society of Mechanical Engineers(ASME)	ASME
 Annual Reviews Inc.	Annual Reviews
 CSIRO Publishing	CSIRO
-CSIC Consejo Superior de Investigaciones Cientificas	Consejo Superior de Investigaciones CientÌficas
+CSIC Consejo Superior de Investigaciones Cientificas	Consejo Superior de Investigaciones Cient√≠ficas
 Copernicus	Copernicus Publications
 EDP Open	EDP Sciences
 Elsevier Masson	Elsevier
@@ -67,7 +129,9 @@ Intellect Publishers	Intellect
 MIT Press Journals	MIT Press
 PAGEpress Publications	PAGEpress
 PagePress	PAGEpress
-SCIENCEDOMAIN international	SCIENCEDOMAIN International
+SCIENCEDOMAIN international	Sciencedomain International
+Science Domain International	Sciencedomain International
+SCIENCEDOMAIN International	Sciencedomain International
 University of Alberta Library	University of Alberta
 Informa UK (Taylor & Francis)	Taylor & Francis
 Springer-Verlag	Springer
@@ -78,14 +142,16 @@ Walter de Gruyter GmbH	De Gruyter
 Springer (Biomed Central Ltd.)	BioMedCentral
 Wolters Kluwer Health	Wolters Kluwer
 Georg Thieme Verlag KG	Thieme
+Georg Thieme Verlag	Thieme
 Emerald (MCB UP)	Emerald
 OMICS Publishing Group	OMICS
 Bentham Science	Bentham
 De Gruyter Open Sp. z o.o.	De Gruyter
 Inderscience Enterprises Ltd.	Inderscience
+SciTechnol. International Publisher of Science, Technology and Medicine	SciTechnol
 Ovid Technologies (Wolters Kluwer)  - Lippincott Williams & Wilkins	Lippincott, Williams & Wilkins
 Al Manhal FZ, LLC	Al Manhal
-PERSEE Program	PersÈe
+PERSEE Program	Pers√©e
 Springer Science and Business Media LLC	Springer
 Scientific Research Publishing, Inc.	SCIRP
 Academy and Industry Research Collaboration Center	AIRCC Publishing Corporation
@@ -120,3 +186,101 @@ OUP	Oxford University Press
 Inderscience	InderScience
 Medknow Publications	Medknow
 BMC	BioMedCentral
+W.B. Saunders Ltd	Elsevier
+E. Schweizerbart'sche Verlagsbuchhandlung	Schweizerbart
+Schweizerbart Science Publishers	Schweizerbart
+Nova Science Publishers	Nova Science
+American Chemical Society	ACS
+John Hopkins University Press	John Hopkins University Press
+John Benjamins Publishing	John Benjamins
+BMJ Publishing Group	BMJ
+JSciMed Central	JSciMedCentral
+Edizioni Minerva Medica	Minerva Medica
+North-Holland	Elsevier
+Universita di Bologna	University of Bologna
+Palgrave Macmillan	Palgrave
+American Medical Association	JAMA
+Baishideng Publishing Group	Baishideng
+University Library System, University of Pittsburgh	University of Pittsburgh
+University of Lodz	Lodz University Press
+Future Science Group	Future Science
+Macrothink Institute	Macrothink
+Birkhauser Verlag	Springer
+Edizioni Ca' Foscari	Edizioni Ca Foscari
+PAGEpress	PAGEPress
+Rila Publications	Rila
+EDP Sciences	EDPSciences
+Peeters Publishers	Peeters
+Edinburgh University Library	Edinburgh University Press
+University of Alberta	University of Alberta Press
+Academic Press	Elsevier
+Institute of Physics	IOP Publishing
+Institute of Physics Publishing	IOP Publishing
+Insight Medical Publishing	iMedPub
+Izdatel'stvo Nauka	Nauka
+Maik Nauka-Interperiodica Publishing	Nauka
+Scandinavian University Press	Universitetsforlaget
+Universita di Bologna	University of Bologna Press
+University of Bologna	University of Bologna Press
+Libertas Academica	SAGE
+American Geophysical Union	Wiley
+Churchill Livingstone	Elsevier
+Urban and Fischer	Elsevier
+Universita di Bologna	University of Bologna Press
+Hemeroteca Cientifica Catalana	Institut d'Estudis Catalans
+MedCrave Group	Medcrave
+OpenJournals Publishing AOSIS (Pty) Ltd	AOSIS
+Science Press	China Science Publishing & Media
+Ediciones Doyma, S.L.	Elsevier
+MA Healthcare	Mark Allen Group
+Nakladatelske Stredisko CLSJE Purkyne	Czech Medical Association of J. E. Purkyne
+Birkhauser Verlag	Springer
+American Anthropological Association	Wiley
+SCIENCEDOMAIN International	Science Domain International
+Thomson Reuters (Professional)	Thomson Reuters
+JAI Press	Emerald
+Czech Medical Association J.E. Purkyne	Czech Medical Association of J. E. Purkyne
+Gustav Fischer Verlag	Elsevier
+Bohn Stafleu van Loghum	Springer
+Springer Nature	Springer
+Diponegoro University	Universitas Diponegoro
+F1000 Research	Taylor & Francis Group
+Kluwer Law International	Wolters Kluwer
+Nova Science Publishers Inc.	Nova Science
+Now Publishers Inc.	Now Publishers
+Russian Academy of Sciences	Nauka
+World Scientific and Engineering Academy and Society (WSEAS)	WSEAS
+West Publishing Co.	Thomson Reuters
+De Boeck	VAN IN
+Boeck Universite    VAN IN
+Groupe d'Etudes et de Recherches pour le Francais Langue Internationale (GERFLINT)	Gerflint
+John Libbey Eurotext	Libbey
+KeAi Publishing Ltd	KeAi
+Slack, Inc.	Wolters Kluwer
+Society for Industrial and Applied Mathematics Publications	Society for Industrial and Applied Mathematics
+Universidade de Coimbra	Coimbra University Press
+American Institute of Mathematical Sciences	AIMS Press
+American Institute of Mathematical Sciences (AIMS)	AIMS Press
+Chinese Medical Association	Zhonghua Yixeuehui Zazhishe/Chinese Medical Association Publishing House
+Scandinavian University Press/Universitetsforlaget	Universitetsforlaget
+WSEAS Press	WSEAS
+Zibeline International	Zibeline International Publishing
+Martinus Nijhoff Publishers	Brill
+De Gruyter Oldenbourg	De Gruyter
+Fabrizio Serra Editore	Fabrizio Serra
+Cogent OA	Taylor & Francis
+Allen Press	Mark Allen Group
+Elyns Publishing Group	ELYNS Publishing Group
+European Mathematical Society Publishing House	EMS Press
+Institute of Materials, Minerals and Mining (UK)	Taylor & Francis
+Internet Scientific Publications, LLC	Internet Scientific Publications
+NRC Research Press  Canadian Science Publishing
+Science China Press China Science Publishing & Media
+Universitetsforlaget AS Universitetsforlaget
+Adis    Springer
+Atlantis Press Springer
+Consultants Bureau  Springer
+Institution of Engineers (India)    Springer
+Universidad Complutense de Madrid   Universidad Complutense Madrid
+Wichtig Publishing  SAGE
+Wolters Kluwer	Lippincott, Williams & Wilkins

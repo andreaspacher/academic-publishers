@@ -10,16 +10,14 @@ This readme-file contains some cursory remarks. For greater details, [see the pr
 
 This project's purpose is to generate a list of major academic publishers and their scholarly journals through webscraping.
 
-As for the results, see the the `Output`-folder, or browse through the final list at https://ooir.org/journals/ (that website is based on 2021 data, but the `Output`-folder contains updated data from 2022).
-
-In total, this project found 26.575 journals belonging to 138 publishers.
+As for the results, see the file `Output\top-100-publishers.xlsx` (last updated in July 2022).
 
 ## Key Documents
 
 There are three key documents for adding/scraping publishers:
 
-* `Data\04_publishers.csv`: the (adaptable) list of publishers to be scraped, including the URL and the relevant CSS selectors;
-* `Script\Function\function_getjournals.R`: the scraping function (change the browser there in case you use `RSelenium`);
+* `Data\04_publishers.xlsx`: the (adaptable) list of publishers to be scraped, including the URL and the relevant CSS selectors (many of the newer additions in July 2022 were counted manually, albeit the most relevant CSS selector containing the journal names or links are added);
+* `Script\Function\function_getjournals.R`: the scraping function;
 * `Script\Analysis_06_Extract-Journals.R`: activate the scraping function
 
 ## Data Sources
@@ -45,19 +43,21 @@ Using the information from the four data sources, the script takes each publishe
 
 In a further step, the script harmonizes duplicated names of publishers (based on the data in `Data\03_publishers_harmonization.txt`). 
 
+The rest was done manually, e.g. looking for the links of journal catalogues and collecting the relevant CSS selector for each publisher (in `Data\04_publishers.xlsx`).
+
 ### Journals
 
-Finally, the publishers' websites are accessed via a uniform webscraping function (but with differing css selectors) so as to extract all of the publishers' journal names, including the URL to each journal. This is done in file 06 in the `Script`-folder. 
+Finally, the publishers' websites are accessed via a uniform webscraping function (but with differing CSS selectors) so as to extract all of the publishers' journal names, including the URL to each journal. This is done in file 06 in the `Script`-folder. 
 
-The various css selectors for each publisher is saved in `Data\04_publishers.csv`.
+The various css selectors for each publisher is saved in `Data\04_publishers.xlsx`.
 
 ## Results
 
 ### Publishers
 
-The full list of the publishers and their journal counts is visible in `Output\allpublishers-2022-04-15.xlsx`.
+The full list of the publishers and their journal counts is visible in `Output\top-100-publishers.xlsx`.
 
 
 ### Journals
 
-The journal list is visible in `Output\alljournals-2022-03-02.csv`, or at https://ooir.org/journals/ (the list is based on 2022 data, while the website is from 2021).
+The journal list is visible in `Output\Journals\alljournals-2022-03-02.csv`. Note, however, that the list is incomplete as many publishers were not scraped (yet) but only their number of journals were counted based on CSS selectors.

@@ -10,10 +10,12 @@ publons <- data.frame("publisher" = character(), "journals" = integer(), "review
 # scrape 43 pages at Publons,
 # so as to cover publishers that have at least 1.000 reviews there
 # (as of Dec. 2020)
-for (i in 1:43) {
+for (i in 1:570) {
 
   # progress indicator
-  cat(".")
+  #cat(".")
+  
+  print(i)
 
   # scrape each of the 43 pages
   pg <- xml2::read_html(paste0(url_base, i))
@@ -30,7 +32,7 @@ for (i in 1:43) {
 
   publons <- rbind(publons, currentdf)
 
-  Sys.sleep(8)
+  Sys.sleep(3)
 }
 
 publons$journals <- as.numeric(publons$journals)
@@ -38,4 +40,4 @@ df <- publons[order(publons$journals, decreasing = TRUE), ]
 df <- df[!duplicated(df$publisher), ]
 df$reviews <- substring(df$reviews, 7)
 
-write.csv(df, "Output\\02_publishers_Publons.csv", row.names = FALSE)
+write.csv(df, "Output\\Preliminary_Lists\\02_publishers_Publons.csv", row.names = FALSE)

@@ -2,10 +2,10 @@
 # IMPORT DATA
 #
 library(readr)
-csv_doaj <- read_csv(file = "Output\\01_publishers_DOAJ.csv")
-csv_publons <- read_csv(file = "Output\\02_publishers_Publons.csv")
-csv_scopus <- read_csv(file = "Output\\03_publishers_Scopus.csv")
-csv_romeo <- read_csv(file = "Output\\04_publishers_SherpaRomeo.csv")
+csv_doaj <- read_csv(file = "Output\\Preliminary_Lists\\01_publishers_DOAJ.csv")
+csv_publons <- read_csv(file = "Output\\Preliminary_Lists\\02_publishers_Publons.csv")
+csv_scopus <- read_csv(file = "Output\\Preliminary_Lists\\03_publishers_Scopus.csv")
+csv_romeo <- read_csv(file = "Output\\Preliminary_Lists\\04_publishers_SherpaRomeo.csv")
 
 names(csv_doaj) <- c("Publisher", "Journals")
 names(csv_publons) <- c("Publisher", "Journals", "Reviews")
@@ -16,12 +16,11 @@ names(csv_romeo) <- c("Publisher", "Journals")
 # Preliminary Results
 # ============================
 #
-# DOAJ       7217 Publishers
-# Publons     430 Publishers
-# Romeo      4611 Publishers
+# DOAJ       8101 Publishers
+# Publons    5145 Publishers
+# Romeo      4273 Publishers
 # Scopus    11881 Publishers
 #
-
 csv_publons$Reviews <- NULL
 
 alljournals <- list(
@@ -32,8 +31,8 @@ alljournals <- list(
 )
 
 # How many journals should a publisher have in order to be listed?
-# This example shows a threshold of 30 journals per publisher
-threshold <- 30
+# This example shows a threshold of 15 journals per publisher
+threshold <- 15
 
 alljournals <- lapply(alljournals, function(x) subset(x, Journals >= threshold))
 
@@ -46,6 +45,16 @@ names(csv_doaj) <- c("Publisher", "DOAJ_Journals")
 names(csv_publons) <- c("Publisher", "Publons_Journals")
 names(csv_romeo) <- c("Publisher", "Romeo_Journals")
 names(csv_scopus) <- c("Publisher", "Scopus_Journals")
+
+# ============================
+# Preliminary Results 2
+# ============================
+#
+# DOAJ       113 Publishers
+# Publons    219 Publishers
+# Romeo      260 Publishers
+# Scopus     162 Publishers
+# ALL        568 distinct names! (before harmonization)
 
 doaj_publons <- merge(csv_doaj, csv_publons, by = "Publisher", all = T)
 romeo_scopus <- merge(csv_romeo, csv_scopus, by = "Publisher", all = T)
@@ -65,9 +74,24 @@ alljournaldata$Publons_Journals <- as.numeric(alljournaldata$Publons_Journals)
 alljournaldata$Romeo_Journals <- as.numeric(alljournaldata$Romeo_Journals)
 alljournaldata$Scopus_Journals <- as.numeric(alljournaldata$Scopus_Journals)
 
+# manual correction necessary... 
+# b/c for some reason, the harmonization-step does not work
+# with all publishers
+alljournaldata <- alljournaldata %>%
+  mutate(Publisher = case_when(
+    grepl("Hemeroteca", Publisher) ~ "Institut d'Estudis Catalans",
+    grepl("Bologna", Publisher) ~ "University of Bologna Press",
+    grepl("Mulino", Publisher) ~ "Il Mulino",
+    grepl("Johns Hop", Publisher) ~ "John Hopkins University Press",
+    TRUE ~ Publisher
+  ))
 
 library(data.table)
 DT <- data.table(alljournaldata)
+
+Encoding(DT$Publisher) <- 'latin1'
+DT$Publisher <- stringi::stri_trans_general(DT$Publisher, 'Latin-ASCII')
+
 DT <- DT[, lapply(.SD, sum, na.rm = T), by = Publisher]
 DT <- DT[order(Publisher)]
 
@@ -75,4 +99,10 @@ DT <- dplyr::mutate(DT, maxjournals = pmax(DOAJ_Journals, Publons_Journals, Rome
 DT <- DT[order(-maxjournals)]
 
 currdate <- Sys.Date()
-write.csv(DT, paste0("Output\\allpublishers-", currdate, ".csv"), row.names = FALSE)
+
+write.csv(DT, paste0("Output\\Preliminary_Lists\\allpublishers-", currdate, ".csv"), row.names = FALSE)
+
+# Next step is manual:
+# find all relevant links to journal catalogues,
+# and collect CSS selectors etc, for every publisher,
+# and save as "Data\04_publishers.xlsx"
