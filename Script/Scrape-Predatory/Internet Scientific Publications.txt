@@ -1,0 +1,1338 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Internet Scientific Publications</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/media/design_assets/layout/plugins/html5.js"></script>
+    <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/styles/master" type="text/css">
+
+    <script type="text/javascript" src="/media/design_assets/layout/js/jquery.js"></script>
+
+    <!-- PrettyPhoto start -->
+    <link rel="stylesheet" href="/media/design_assets/layout/plugins/prettyphoto/css/prettyPhoto.css" type="text/css">
+    <script type="text/javascript" src="/media/design_assets/layout/plugins/prettyphoto/jquery.prettyPhoto.js"></script>
+    <!-- PrettyPhoto end -->
+
+    <!-- jQuery tools start -->
+    <script type="text/javascript" src="/media/design_assets/layout/plugins/tools/jquery.tools.min.js"></script>
+    <!-- jQuery tools end -->
+
+    <!-- Calendar start -->
+    <link rel="stylesheet" href="/media/design_assets/layout/plugins/calendar/calendar.css" type="text/css">
+    <script type="text/javascript" src="/media/design_assets/layout/plugins/calendar/calendar.js"></script>
+    <!-- Calendar end -->
+
+    <!-- ScrollTo start -->
+    <script type="text/javascript" src="/media/design_assets/layout/plugins/scrollto/jquery.scroll.to.min.js"></script>
+    <!-- ScrollTo end -->
+
+    <!-- MediaElements start -->
+    <link rel="stylesheet" href="/media/design_assets/layout/plugins/video-audio/mediaelementplayer.css" >
+    <script src="/media/design_assets/layout/plugins/video-audio/mediaelement-and-player.js"></script>
+    <!-- MediaElements end -->
+
+    <!-- FlexSlider start -->
+    <link rel="stylesheet" href="/media/design_assets/layout/plugins/flexslider/flexslider.css" type="text/css"/>
+    <script type="text/javascript" src="/media/design_assets/layout/plugins/flexslider/jquery.flexslider-min.js"></script>
+    <!-- FlexSlider end -->
+
+    <!-- iButtons start -->
+    <link rel="stylesheet" href="/media/design_assets/layout/plugins/ibuttons/css/jquery.ibutton.css" type="text/css"/>
+    <script type="text/javascript" src="/media/design_assets/layout/plugins/ibuttons/lib/jquery.ibutton.min.js"></script>
+    <!-- iButtons end -->
+
+    <!-- jQuery Form Plugin start -->
+    <script type="text/javascript" src="/media/design_assets/layout/plugins/ajaxform/jquery.form.js"></script>
+    <!-- jQuery Form Plugin end -->
+
+    <script type="text/javascript" src="/media/design_assets/layout/js/main.js"></script>
+
+    <script type="text/javascript">
+        jQuery(function () {
+        });
+    </script>
+
+	<!-- UBM ad setup -->
+
+	<script type="text/javascript">
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		(function() {
+			var gads = document.createElement("script");
+			gads.async = true;
+			gads.type = "text/javascript";
+			var useSSL = true; // "https:" == document.location.protocol;
+			gads.src = (useSSL ? "https:" : "http:") +
+					"//www.googletagservices.com/tag/js/gpt.js";
+			var node = document.getElementsByTagName("script")[0];
+			node.parentNode.insertBefore(gads, node);
+		})();
+	</script>
+
+	<script type="text/javascript">
+		googletag.cmd.push(function() {googletag.defineSlot("/4688/ISPUB/primarycare/primarycare", [ [728, 90]], "div-gpt-ad-728x90-bottom").addService(googletag.pubads())
+					.setTargeting("pos", "bottom");
+			googletag.defineSlot("/4688/ISPUB/primarycare/primarycare", [ [300, 250]], "div-gpt-ad-300x250-rec1").addService(googletag.pubads())
+					.setTargeting("pos", "rec1");
+			googletag.defineSlot("/4688/ISPUB/primarycare/primarycare", [ [300, 250]], "div-gpt-ad-300x250-rec2").addService(googletag.pubads())
+					.setTargeting("pos", "rec2");
+
+			googletag.pubads().setTargeting("kw", [""]);
+
+			googletag.pubads().setTargeting("cat", [
+                "primarycare",
+                
+                "primarycare",
+                "arthritis",
+                "cold",
+                "copd",
+                "highcholesterol",
+                "cardiovascular",
+                "hypertension",
+                "internalmedicine",
+                "nutritionanddiet",
+                "obesity",
+                "pain",
+                "pneumonia",
+                "sleepdisorders"
+            ]
+            );
+
+			googletag.pubads().enableSingleRequest();
+			googletag.enableServices();
+		});
+	</script>
+
+	<!-- / UBM ad setup -->
+
+
+
+    <!-- ShareThis -->
+    <!--
+    <script type="text/javascript">var switchTo5x=false;</script>
+    <script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-875b3f51-baf-e23-efd2-cb968e44b83d", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
+    -->
+
+</head>
+
+<body>
+<div class="wrapper sticky_footer">
+    <!-- HEADER BEGIN -->
+    <header>
+        <div id="header">
+            <section class="top">
+                <div class="inner">
+                    <div class="fl">
+                        <div class="block_top_menu">
+                            <a style="color:#aaa;" href="http://ispub.com/">ISPUB.com</a> / <a href="http://ispub.com/journals">journals</a>
+                            <!--journals+http://ispub.com/journals+journals-->
+                            <!-- HEADER LINKS
+                                <ul>
+
+                                    <li class="current"><a href="http://ispub.com/">Home</a></li>
+                                    <li><a href="#">Site Map</a></li>
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+
+                                </ul>
+-->
+                        </div>
+                    </div>
+
+                    <div class="fr">
+                        <div class="block_top_menu">
+                            <ul>
+                                <li class="current"><a href="/qmp">Author/Editor Login</a></li>
+                                <li><a href="/qmp/register">Registration</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="block_social_top">
+                            <ul>
+                                <li><a href="https://www.facebook.com/ispubjournals?sid=0.2273684765677899" class="fb">Facebook</a></li>
+                                <!-- <li><a href="#" class="tw">Twitter</a></li> -->
+                                <li><a href="https://plus.google.com/101042698278346390916/posts" class="gplus">Google Plus</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clearboth"></div>
+                </div>
+            </section>
+
+
+            <section class="bottom">
+                <div class="inner">
+
+                    
+
+                    <div class="fr" style="z-index:99;">
+                        <h1 style="color:#e1e4e7;font-weight:bold;font-size:40px;margin-top:30px;line-height:1;">ISPUB.com</h1>
+
+                        <div class="block_search_top">
+                            <form method="post" action="http://ispub.com/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="params" value="eyJyZXN1bHRfcGFnZSI6InNlYXJjaFwvcmVzdWx0cyJ9" />
+<input type="hidden" name="ACT" value="99" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="02a92ee181bf2f1e27c442480f418d55ee0fdd2c" />
+</div>
+
+
+                            <div class="field"><input name="keywords" type="text" class="w_def_text" title="Search..."></div>
+                            <input type="submit" class="button" value="Search">
+                            <div class="clearboth"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    
+
+                    <!--
+                    <div style="padding-top: 20px;"><img style="float:left;" src="/media/design_assets/qmp_01/ispub-logo.png"><div style="float:left;padding:20px 0 10px 24px;"><a href="index.html"><h1>Internet <br>Scientific <br>Publications</h1></a></div></div>
+                    -->
+
+                    <div style="padding-top: 30px;z-index:0;">
+
+                        <h1 style="font-weight:bold; text-transform:uppercase;font-size:27px;font-family: 'PT Sans', Helvetica, Arial, sans-serif;">
+                            <span style="color:black;">Internet</span><br>
+                            <span style="color:#2490c0;">Scientific</span><br>
+                            <span style="color:black;">Publications</span>
+                        </h1>
+
+                        <!--
+                        <h1 style="color:#e1e4e7;font-weight:bold;font-size:50px;position:absolute; top: 30px; right:0px;">ISPUB.com</h1>
+                        -->
+
+
+                    </div>
+
+
+
+                    <div class="fr">
+
+
+
+                        
+                    </div>
+
+
+
+                    <div class="clearboth"></div>
+                </div>
+            </section>
+
+
+            <section class="section_main_menu">
+                <div class="inner">
+                    <nav class="main_menu">
+                        <ul id="nav-main" class="main_nav">
+<li class="first"><a href="http://ispub.com/home">Home</a></li>
+<li class="current_page_item"><a href="http://ispub.com/journals">Journals</a></li>
+<li><a href="http://ispub.com/latest-articles">Latest Articles</a></li>
+<li><a href="http://ispub.com/disclaimers">Disclaimers</a></li>
+<li><a href="http://ispub.com/submit-an-article">Article Submissions</a></li>
+<li><a href="http://ispub.com/contact">Contact</a></li>
+<li class="last"><a href="http://ispub.com/help">Help</a></li>
+</ul>
+                    </nav>
+                </div>
+            </section>
+
+
+            <section class="section_secondary_menu">
+                
+            </section>
+
+
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+		<!-- CONTENT BEGIN -->
+
+		<div id="content" class="right_sidebar">
+
+			<div class="inner">
+				<div class="general_content">
+					<div class="main_content">
+
+						
+
+		
+		
+		
+
+		
+		<div>
+			<h3><a href="/IJAPA">The Internet Journal of Academic Physician Assistants</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJAPA/11/1">Volume 11, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJANP">The Internet Journal of Advanced Nursing Practice</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJANP/18/1">Volume 18, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJAMT">The Internet Journal of Aeromedical Transportation</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJAMT/3/1">Volume 3, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJAAM">The Internet Journal of Aesthetic and Antiaging Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJAAM/4/1">Volume 4, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJAM">The Internet Journal of Alternative Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJAM/11/1">Volume 11, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJA">The Internet Journal of Anesthesiology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJA/41/1">Volume 41, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJAAI">The Internet Journal of Asthma, Allergy and Immunology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJAAI/11/1">Volume 11, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJBE">The Internet Journal of Bioengineering</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJBE/6/1">Volume 6, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJBA">The Internet Journal of Biological Anthropology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJBA/10/1">Volume 10, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJC">The Internet Journal of Cardiology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJC/16/1">Volume 16, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJCVR">The Internet Journal of Cardiovascular Research</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJCVR/10/1">Volume 10, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJCH">The Internet Journal of Chiropractic</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJCH/9/1">Volume 9, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJDS">The Internet Journal of Dental Science</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJDS/17/1">Volume 17, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJD">The Internet Journal of Dermatology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJD/15/1">Volume 15, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJDM">The Internet Journal of Disaster Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJDM/1/2">Volume 1, Issue 2</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJEICM">The Internet Journal of Emergency and Intensive Care Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJEICM/15/1">Volume 15, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJEM">The Internet Journal of Emergency Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJEM/9/1">Volume 9, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJEN">The Internet Journal of Endocrinology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJEN/10/1">Volume 10, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJEVM">The Internet Journal of Endovascular Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJEVM/2/1">Volume 2, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJE">The Internet Journal of Epidemiology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJE/16/1">Volume 16, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJFP">The Internet Journal of Family Practice</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJFP/14/1">Volume 14, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJFS">The Internet Journal of Forensic Science</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJFS/5/1">Volume 5, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJGE">The Internet Journal of Gastroenterology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJGE/18/1">Volume 18, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJGP">The Internet Journal of Genomics and Proteomics</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJGP/8/1">Volume 8, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJGG">The Internet Journal of Geriatrics and Gerontology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJGG/10/1">Volume 10, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJGO">The Internet Journal of Gynecology and Obstetrics</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJGO/26/1">Volume 26, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJHS">The Internet Journal of Hand Surgery</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJHS/11/1">Volume 11, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJHNS">The Internet Journal of Head and Neck Surgery</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJHNS/8/1">Volume 8, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJH">The Internet Journal of Health</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJH/16/1">Volume 16, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJHCA">The Internet Journal of Healthcare Administration</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJHCA/14/1">Volume 14, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJHE">The Internet Journal of Hematology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJHE/15/1">Volume 15, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJHPM">The Internet Journal of Herbal and Plant Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJHPM/3/1">Volume 3, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJHM">The Internet Journal of Hospital Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJHA">The Internet Journal of Human Anatomy</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJHA/3/1">Volume 3, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJID">The Internet Journal of Infectious Diseases</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJID/19/1">Volume 19, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJIM">The Internet Journal of Internal Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJIM/14/1">Volume 14, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJINT">The Internet Journal of Interventional Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJINT/3/1">Volume 3, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJLM">The Internet Journal of Laboratory Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJLM/6/1">Volume 6, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJLNM">The Internet Journal of Laserneedle Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJLNM/3/1">Volume 3, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJLHE">The Internet Journal of Law, Healthcare and Ethics</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJLHE/14/1">Volume 14, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJME">The Internet Journal of Medical Education</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJME/5/1">Volume 5, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJMI">The Internet Journal of Medical Informatics</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJMI/8/1">Volume 8, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJMS">The Internet Journal of Medical Simulation</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJMS/5/1">Volume 5, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJMSR">The Internet Journal of Medical Student Research</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJMSR/1/1">Volume 1, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJMT">The Internet Journal of Medical Technology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJMT/6/1">Volume 6, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJMH">The Internet Journal of Mental Health</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJMH/9/1">Volume 9, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJMB">The Internet Journal of Microbiology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJMB/19/1">Volume 19, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJMIST">The Internet Journal of Minimally Invasive Spinal Technology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJMIST/7/1">Volume 7, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJNT">The Internet Journal of Nanotechnology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJNT/3/2">Volume 3, Issue 2</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJNE">The Internet Journal of Nephrology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJNE/11/1">Volume 11, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJN">The Internet Journal of Neurology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJN/23/1">Volume 23, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJNM">The Internet Journal of Neuromonitoring</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJNM/7/1">Volume 7, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJNS">The Internet Journal of Neurosurgery</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJNS/17/1">Volume 17, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJNUC">The Internet Journal of Nuclear Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJNUC/8/1">Volume 8, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJNW">The Internet Journal of Nutrition and Wellness</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJNW/14/1">Volume 14, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJOH">The Internet Journal of Occupational Health</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJOH/2/1">Volume 2, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJO">The Internet Journal of Oncology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJO/17/1">Volume 17, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJOVS">The Internet Journal of Ophthalmology and Visual Science</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJOVS/12/1">Volume 12, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJOS">The Internet Journal of Orthopedic Surgery</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJOS/30/1">Volume 30, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJORL">The Internet Journal of Otorhinolaryngology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJORL/20/1">Volume 20, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPSP">The Internet Journal of Pain, Symptom Control and Palliative Care</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPSP/14/1">Volume 14, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPD">The Internet Journal of Parasitic Diseases</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPD/6/1">Volume 6, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPA">The Internet Journal of Pathology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPA/23/1">Volume 23, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPN">The Internet Journal of Pediatrics and Neonatology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPN/23/1">Volume 23, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPF">The Internet Journal of Perfusionists</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPF/2/2">Volume 2, Issue 2</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPHARM">The Internet Journal of Pharmacology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPHARM/15/1">Volume 15, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPP">The Internet Journal of Physiology and Pathophysiology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPP/2/1">Volume 2, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPS">The Internet Journal of Plastic Surgery</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPS/15/1">Volume 15, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPRM">The Internet Journal of Preventive Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPRM/2/1">Volume 2, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPSY">The Internet Journal of Psychiatry</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPSY/5/1">Volume 5, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPH">The Internet Journal of Public Health</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPH/8/1">Volume 8, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJPM">The Internet Journal of Pulmonary Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJPM/20/1">Volume 20, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJRA">The Internet Journal of Radiology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJRA/23/1">Volume 23, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJRE">The Internet Journal of Rehabilitation</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJRE/2/1">Volume 2, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJRDM">The Internet Journal of Rescue and Disaster Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJRDM/10/1">Volume 10, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJRH">The Internet Journal of Rheumatology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJRH/8/1">Volume 8, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJSEX">The Internet Journal of Sexual Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJSEX/3/1">Volume 3, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJSS">The Internet Journal of Spine Surgery</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJSS/10/1">Volume 10, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJS">The Internet Journal of Surgery</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJS/38/1">Volume 38, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJTWM">The Internet Journal of Third World Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJTWM/12/1">Volume 12, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJTCVS">The Internet Journal of Thoracic and Cardiovascular Surgery</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJTCVS/22/1">Volume 22, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJTO">The Internet Journal of Toxicology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJTO/14/1">Volume 14, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJTM">The Internet Journal of Tropical Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJTM/9/1">Volume 9, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJU">The Internet Journal of Urology</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJU/15/1">Volume 15, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJVM">The Internet Journal of Veterinary Medicine</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJVM/17/1">Volume 17, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+		<div>
+			<h3><a href="/IJWH">The Internet Journal of World Health and Societal Politics</a></h3>
+			<p>&raquo; Current issue:
+			
+				<strong><a href="/IJWH/11/1">Volume 11, Issue 1</a></strong>
+			
+			</p>
+
+		</div>
+		
+
+	
+
+					</div>
+
+					<div class="sidebar">
+
+						
+
+		
+		<p><p>Your free access to ISPUB is funded by the following advertisements:</p>
+
+<div id="div-gpt-ad-300x250-rec1">
+	<script type="text/javascript">
+		googletag.cmd.push(function() {googletag.display("div-gpt-ad-300x250-rec1");});
+	</script>
+</div>
+
+<p>&nbsp;</p>
+
+<div id="div-gpt-ad-300x250-rec2">
+	<script type="text/javascript">
+		googletag.cmd.push(function() {googletag.display("div-gpt-ad-300x250-rec2");});
+	</script>
+</div></p>
+
+	
+
+					</div>
+
+					<div class="clearboth"></div>
+				</div>
+			</div>
+
+			<div class="footer_ad" style="text-align: center;">
+				<div id="div-gpt-ad-728x90-bottom">
+					<script type="text/javascript">
+						googletag.cmd.push(function() {googletag.display("div-gpt-ad-728x90-bottom");});
+					</script>
+				</div>
+			</div>
+			<p>&nbsp;</p>
+
+		</div><!-- / #content -->
+
+		<!-- CONTENT END -->
+
+<!-- FOOTER BEGIN -->
+<footer>
+    <div id="footer">
+        <section class="top">
+            <div class="inner">
+                <div id="logo_bottom"><a href="index.html"></a></div>
+
+                <div class="block_to_top">
+                    <a href="#">BACK TO TOP</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom">
+            <div class="inner">
+                <div class="line_1"></div>
+
+                <div class="fr">
+                    <!-- FOOTER LINKS
+                                                <div class="block_menu_footer">
+                                                    <ul>
+                                                        <li><a href="">Lorem</a></li>
+                                                        <li><a href="">Ipsum</a></li>
+                                                        <li><a href="">Dolor</a></li>
+                                                        <li><a href="">Sit Amet</a></li>
+                                                    </ul>
+                                                </div>
+                    -->
+
+                    <div class="block_social_footer">
+                        <ul>
+                            <li><a href="https://www.facebook.com/ispubjournals?sid=0.2273684765677899" class="fb">Facebook</a></li>
+                            <!-- <li><a href="#" class="tw">Twitter</a></li> -->
+                            <li><a href="https://plus.google.com/101042698278346390916/posts" class="gplus">Google Plus</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="block_copyrights"><p>
+	                &copy; 2013 Internet Scientific Publications, LLC. All rights reserved.
+	                &nbsp;&nbsp; <a href="http://imaging.ubmmedica.com/all/UBMMedica Network_Privacy_Statement.html">UBM Medica Network Privacy Policy</a>
+                </p></div>
+            </div>
+        </section>
+    </div>
+</footer>
+<!-- FOOTER END -->
+</div>
+
+<!-- POPUP BEGIN -->
+<div id="overlay"></div>
+<div id="login" class="block_popup">
+    <div class="popup">
+        <a href="#" class="close">Close</a>
+
+        <div class="content">
+            <div class="title"><p>Enter the site</p></div>
+
+            <div class="form">
+                <form action="#">
+                    <div class="column">
+                        <p class="label">Login</p>
+                        <div class="field"><input type="text"></div>
+                    </div>
+
+                    <div class="column">
+                        <p class="label">Password</p>
+                        <div class="field"><input type="password"></div>
+                    </div>
+
+                    <div class="column_2">
+                        <div class="remember">
+                            <div class="checkbox"><input type="checkbox"></div>
+                            <div class="remember_label"><p>Remember me</p></div>
+                        </div>
+                    </div>
+
+                    <div class="column_2">
+                        <p class="forgot_pass"><a href="#">Forgot password?</a></p>
+                    </div>
+
+                    <div class="column button">
+                        <a href="#" class="enter"><span>Login</span></a>
+                    </div>
+
+                    <div class="clearboth"></div>
+                </form>
+            </div>
+
+            <div class="subtitle"><p>SIGN IN AS A USER</p></div>
+
+            <div class="fb_button"><a href="#"><img src="/media/design_assets/layout/images/button_fb_login.png" alt=""></a></div>
+            <div class="text"><p>Use your account on the social network Facebook, to create a profile on BusinessPress</p></div>
+        </div>
+    </div>
+</div>
+<!-- POPUP END -->
+
+<!-- Google Analytics -->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-39381532-1', 'auto');
+	ga('send', 'pageview');
+	ga('create', 'UA-26136940-1', 'auto', '3p');
+	ga('3p.send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+<script>
+
+    $(function(){
+
+        $(".-highlight_ref").click(function(){
+
+            var ref_id = $(this).data("ref_id");
+            $( "#" + ref_id ).css("background","#ffffaa");
+
+        });
+
+    });
+
+</script>
+
+<!-- UBM Ad setup -->
+
+<script type='text/javascript'>var omnitureReportingSuiteId = 'ubmcispubcom';</script>
+<script src='https://member.ubmmedica.com/ssonp/s_code.js' type='text/javascript'></script>
+<script src='https://member.ubmmedica.com/ssonp/omniture-basic.js' type='text/javascript'></script>
+
+<script type="text/javascript">if(navigator.userAgent.match(/iphone|ipod|android/i))document.write('\x3cscript type="text/javascript" src="http://ads.admarvel.com/fam/overpassGetAd.php?partner_id=ceb1ef9748280d72&site_id=92997&cb=' + +new Date + '">\x3c/script>');</script>
+<script type="text/javascript">if(navigator.userAgent.match(/ipad/i))document.write('\x3cscript type="text/javascript" src="http://ads.admarvel.com/fam/overpassGetAd.php?partner_id=ceb1ef9748280d72&site_id=92998&cb=' + +new Date + '">\x3c/script>');</script>
+
+<!-- / UBM ad setup -->
+
+
+
+</body>
+
+</html>
