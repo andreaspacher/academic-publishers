@@ -191,7 +191,7 @@ E. Schweizerbart'sche Verlagsbuchhandlung	Schweizerbart
 Schweizerbart Science Publishers	Schweizerbart
 Nova Science Publishers	Nova Science
 American Chemical Society	ACS
-John Hopkins University Press	John Hopkins University Press
+John Hopkins University Press	Johns Hopkins University Press
 John Benjamins Publishing	John Benjamins
 BMJ Publishing Group	BMJ
 JSciMed Central	JSciMedCentral
@@ -284,3 +284,9 @@ Institution of Engineers (India)    Springer
 Universidad Complutense de Madrid   Universidad Complutense Madrid
 Wichtig Publishing  SAGE
 Wolters Kluwer	Lippincott, Williams & Wilkins
+Universidade Federal do Esp\xedrito Santo	Universidade Federal do Espirito Santo
+Universidade Federal do Espírito Santo	Universidade Federal do Espirito Santo
+Universidade de Bras\xedlia	Universidade de Brasilia
+Universidade de Brasília	Universidade de Brasilia
+Longdom Publishing	Longdom
+Editura Academiei Romane/Publishing House of the Romanian Academy	Editura Academiei Romane
