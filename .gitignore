@@ -2,7 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-Output\finalanalysis.R
-Output\ranking.R
+Script\ranking.R
 CHANGES-AUG2022.txt
 Script\RnR-combine.R
